@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DIANA — Инновации в стоматологии</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение стилей -->
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        /* Стили для шапки */
+        .header {
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #e5e5e5;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .header .logo {
+            float: left;
+        }
+        .header nav {
+            float: right;
+        }
+        .header nav a {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        /* Стили для героя */
+        .hero {
+            background-image: url('https://dianapp.online/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 150px 20px 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .hero .button {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        /* Стили для секций */
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #2A2A2A;
+        }
+        /* Стили для функций */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature {
+            display: flex;
+            width: 100%;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+        .feature:nth-child(even) .feature-image {
+            order: 2;
+        }
+        .feature-image {
+            flex: 1;
+            padding: 20px;
+        }
+        .feature-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .feature-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .feature-content h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+        .feature-content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        /* Стили для отзывов */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 80px 20px;
+        }
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+        .testimonial p {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial strong {
+            font-size: 18px;
+            color: #555555;
+        }
+        /* Стили для тарифов */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto 40px auto;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #dddddd;
+            padding: 20px;
+            text-align: center;
+        }
+        .pricing-table th {
+            background-color: #f0f8ff;
+            font-size: 20px;
+        }
+        .pricing-table td {
+            font-size: 18px;
+        }
+        /* Стили для футера */
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffffff;
+            margin: 0 10px;
+        }
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .feature {
+                flex-direction: column;
+            }
+            .feature:nth-child(even) .feature-image {
+                order: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="https://i.postimg.cc/cJ1hC9Jh/90.jpg" alt="DIANA Logo" style="height:50px;"></a>
+        </div>
+        <nav>
+            <a href="#features">Функции</a>
+            <a href="#pricing">Тарифы</a>
+            <a href="#testimonials">Отзывы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <h1>Трансформируйте вашу клинику с DIANA</h1>
+        <p>Инновационные решения для роста и успеха</p>
+        <a href="#contact" class="button">Записаться на демонстрацию</a>
+    </section>
+
+    <!-- Основной контент -->
+    <main>
+
+        <!-- Почему DIANA -->
+        <section class="section" id="features">
+            <h2>Почему DIANA — это будущее стоматологии?</h2>
+
+            <!-- Функции -->
+            <div class="features">
+
+                <!-- Функция 1 -->
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="https://i.postimg.cc/k5VVTKY9/2024-09-18-Diana-page-0001.jpg" alt="Автоматический анализ налета">
+                    </div>
+                    <div class="feature-content">
+                        <h3>1. Автоматический анализ налета с искусственным интеллектом</h3>
+                        <p><strong>Экономия времени:</strong> Анализ занимает всего <strong>1-2 минуты</strong>.</p>
+                        <p><strong>Точность и наглядность:</strong> ИИ подсчитывает гигиенические индексы и визуализирует результаты.</p>
+                        <p><strong>Мотивация пациентов:</strong> Отчеты стимулируют пациентов следовать рекомендациям.</p>
+                    </div>
+                </div>
+
+                <!-- Функция 2 -->
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3>2. Пародонтальная карта и скрининг</h3>
+                        <p><strong>Стандартизированная диагностика:</strong> Использование индексов CPITN/BPE.</p>
+                        <p><strong>Планирование лечения:</strong> Детальная карта для эффективного лечения.</p>
+                        <p><strong>Повышение доверия:</strong> Пациенты видят реальное состояние своих десен.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://i.postimg.cc/BnzbPtSz/image-98-page-0001.jpg" alt="Пародонтальная карта">
+                    </div>
+                </div>
+
+                <!-- Функция 3 -->
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="https://i.postimg.cc/1Xy31qB8/4-2-1.png" alt="Подбор ершиков">
+                    </div>
+                    <div class="feature-content">
+                        <h3>3. Персонализированный подбор ершиков</h3>
+                        <p><strong>Индивидуальный подход:</strong> Рекомендации из 4 ведущих брендов.</p>
+                        <p><strong>Увеличение продаж:</strong> Пациенты приобретают рекомендованные средства.</p>
+                    </div>
+                </div>
+
+                <!-- Функция 4 -->
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3>4. Телеграм-бот DIANA Care</h3>
+                        <p><strong>Постоянная связь с пациентами:</strong> Отчеты и напоминания.</p>
+                        <p><strong>Повышение возвращаемости:</strong> Стимулирует записываться на повторные приемы.</p>
+                        <p><strong>Улучшение сервиса:</strong> Современный подход и забота о здоровье.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://i.postimg.cc/j2vdxS3Z/Group-11155-page-0001-1.jpg" alt="Телеграм-бот DIANA Care">
+                    </div>
+                </div>
+
+                <!-- Функция 5 -->
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="https://i.postimg.cc/vmpvhQzq/00-Platform-Analytics-Header-Illo-Desktop-2x.png" alt="Аналитика для клиники">
+                    </div>
+                    <div class="feature-content">
+                        <h3>5. Аналитика для вашей клиники</h3>
+                        <p><strong>Контроль эффективности:</strong> Отслеживайте ключевые показатели.</p>
+                        <p><strong>Принятие решений:</strong> Используйте данные для оптимизации.</p>
+                        <p><strong>Повышение конкурентоспособности:</strong> Оставайтесь лидером на рынке.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Отзывы клиентов -->
+        <section class="testimonials" id="testimonials">
+            <h2>Что говорят наши клиенты</h2>
+            <div class="testimonial">
+                <p>"DIANA значительно облегчила нашу работу. Пациенты стали чаще возвращаться на повторные приемы."</p>
+                <strong>— Баянова Анна Николаевна, Заместитель директора клиники "Смарт-Дент"</strong>
+            </div>
+            <div class="testimonial">
+                <p>"DIANA — это отличный инструмент, который экономит ваше время и улучшает качество обслуживания пациентов."</p>
+                <strong>— Бирмамитова Даниза Ризуановна, Гигиенист клиники "Народная стоматология"</strong>
+            </div>
+        </section>
+
+        <!-- Специальное предложение -->
+        <section class="section" id="pricing">
+            <h2>Специальное предложение для вашей клиники</h2>
+            <p style="text-align: center;">Мы предлагаем гибкие тарифы, адаптированные под ваши потребности.</p>
+            <!-- Таблица тарифов -->
+            <table class="pricing-table">
+                <tr>
+                    <th>Тариф</th>
+                    <th>Стоимость</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>Базовый тариф</td>
+                    <td>Пополнение баланса на 30 000 рублей</td>
+                    <td>Стоимость отчета зависит от количества (от 80 до 250 рублей за отчет)</td>
+                </tr>
+                <tr>
+                    <td>DIANA Power ∞ (Безлимит)</td>
+                    <td>50 000 рублей в месяц или 420 000 рублей в год</td>
+                    <td>Безлимитный доступ ко всем сервисам DIANA для клиник до 3 филиалов</td>
+                </tr>
+                <tr>
+                    <td>Пакет "Пародонтология"</td>
+                    <td>3 000 рублей в месяц или 18 000 рублей в год</td>
+                    <td>Доступ к пародонтальной карте и скринингу</td>
+                </tr>
+                <tr>
+                    <td>LUNA — Карта ершиков</td>
+                    <td>2 500 рублей в месяц или 15 000 рублей в год</td>
+                    <td>Персонализированный подбор средств гигиены</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Почему действовать нужно прямо сейчас -->
+        <section class="section">
+            <h2>Почему действовать нужно прямо сейчас?</h2>
+            <ul style="font-size: 18px; max-width: 800px; margin: 0 auto;">
+                <li style="margin-bottom: 10px;"><strong>Ограниченное количество бесплатных тестовых доступов.</strong></li>
+                <li style="margin-bottom: 10px;"><strong>Конкуренты не спят:</strong> Будьте первыми в вашем регионе.</li>
+                <li><strong>Повышение дохода:</strong> Увеличение возвращаемости пациентов и среднего чека.</li>
+            </ul>
+        </section>
+
+        <!-- Следующие шаги -->
+        <section class="section">
+            <h2>Следующие шаги</h2>
+            <ol style="font-size: 18px; max-width: 800px; margin: 0 auto;">
+                <li style="margin-bottom: 10px;"><strong>Запишитесь на бесплатную демонстрацию DIANA.</strong> Мы проведем персональную презентацию и ответим на все ваши вопросы.</li>
+                <li style="margin-bottom: 10px;"><strong>Получите бесплатный тестовый доступ на 7 дней.</strong> Оцените все преимущества DIANA без каких-либо обязательств.</li>
+                <li><strong>Начните трансформацию вашей клиники уже сегодня!</strong></li>
+            </ol>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#contact" class="button">Свяжитесь с нами</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Контактная информация -->
+    <section class="section" id="contact">
+        <h2>Контакты для связи</h2>
+        <p style="font-size: 18px; text-align: center; max-width: 800px; margin: 0 auto;">
+            <strong>Менеджер по работе с клиентами:</strong> Рыбалко Денис<br>
+            <strong>Телефон:</strong> +7 913 007 90 40<br>
+            <strong>Email:</strong> <a href="mailto:rybalko.d@dianapp.ru">rybalko.d@dianapp.ru</a><br>
+            <strong>Сайт:</strong> <a href="https://dianapp.online/">https://dianapp.online/</a>
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://dianapp.online/" class="button">Перейти на сайт</a>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>© 2024 DIANA. Все права защищены.</p>
+        <p>
+            <a href="https://dianapp.online/">Наш сайт</a> |
+            <a href="https://www.youtube.com/@dianapp.online">YouTube канал</a>
+        </p>
+    </footer>
+
+</body>
+</html>
